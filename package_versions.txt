@@ -9,7 +9,6 @@ apt                                                                           2.
 apt-transport-https                                                           2.8.3                                   deb                            
 apt-utils                                                                     2.8.3                                   deb                            
 at-spi2-common                                                                2.52.0-1build1                          deb                            
-at-spi2-core                                                                  2.52.0-1build1                          deb                            
 attrs                                                                         25.3.0                                  python                         
 autoconf                                                                      2.71-3                                  deb                            
 automake                                                                      1:1.16.5-1.3ubuntu1                     deb                            
@@ -677,7 +676,6 @@ libgssapi-krb5-2                                                              1.
 libgstreamer-plugins-base1.0-0                                                1.24.2-1ubuntu0.2                       deb                            
 libgstreamer1.0-0                                                             1.24.2-1ubuntu0.1                       deb                            
 libgtk-3-0t64                                                                 3.24.41-4ubuntu1.3                      deb                            
-libgtk-3-bin                                                                  3.24.41-4ubuntu1.3                      deb                            
 libgtk-3-common                                                               3.24.41-4ubuntu1.3                      deb                            
 libharfbuzz0b                                                                 8.3.0-2build2                           deb                            
 libheif-plugin-aomdec                                                         1.17.6-1ubuntu4.1                       deb                            
@@ -759,6 +757,8 @@ libnginx-mod-http-fancyindex                                                  1:
 libnotify-bin                                                                 0.8.3-1build2                           deb                            
 libnotify4                                                                    0.8.3-1build2                           deb                            
 libnpth0t64                                                                   1.6-3.1build1                           deb                            
+libnspr4                                                                      2:4.35-1.1build1                        deb                            
+libnss3                                                                       2:3.98-1build1                          deb                            
 libnuma1                                                                      2.0.18-1build1                          deb                            
 libobrender32v5                                                               3.6.1-12build5                          deb                            
 libobt2v5                                                                     3.6.1-12build5                          deb                            
@@ -803,7 +803,6 @@ librav1e0                                                                     0.
 libreadline8t64                                                               8.2-4build1                             deb                            
 librhash0                                                                     1.4.3-3build1                           deb                            
 librsvg2-2                                                                    2.58.0+dfsg-1build1                     deb                            
-librsvg2-common                                                               2.58.0+dfsg-1build1                     deb                            
 librtmp1                                                                      2.4+20151223.gitfa8646d.1-2build7       deb                            
 libsamplerate0                                                                0.2.2-4build1                           deb                            
 libsasl2-2                                                                    2.1.28+dfsg1-5ubuntu3.1                 deb                            
@@ -897,14 +896,19 @@ libxcb-damage0                                                                1.
 libxcb-dri2-0                                                                 1.15-1ubuntu2                           deb                            
 libxcb-dri3-0                                                                 1.15-1ubuntu2                           deb                            
 libxcb-glx0                                                                   1.15-1ubuntu2                           deb                            
+libxcb-icccm4                                                                 0.4.1-1.1build3                         deb                            
+libxcb-image0                                                                 0.4.0-2build1                           deb                            
+libxcb-keysyms1                                                               0.4.0-1build4                           deb                            
 libxcb-present0                                                               1.15-1ubuntu2                           deb                            
 libxcb-randr0                                                                 1.15-1ubuntu2                           deb                            
+libxcb-render-util0                                                           0.3.9-1build4                           deb                            
 libxcb-render0                                                                1.15-1ubuntu2                           deb                            
 libxcb-shape0                                                                 1.15-1ubuntu2                           deb                            
 libxcb-shm0                                                                   1.15-1ubuntu2                           deb                            
 libxcb-sync1                                                                  1.15-1ubuntu2                           deb                            
 libxcb-util1                                                                  0.4.0-1build3                           deb                            
 libxcb-xfixes0                                                                1.15-1ubuntu2                           deb                            
+libxcb-xkb1                                                                   1.15-1ubuntu2                           deb                            
 libxcb1                                                                       1.15-1ubuntu2                           deb                            
 libxcomposite1                                                                1:0.4.5-1build3                         deb                            
 libxcursor1                                                                   1:1.2.1-1build1                         deb                            
@@ -921,6 +925,7 @@ libxfont2                                                                     1:
 libxft2                                                                       2.3.6-1build1                           deb                            
 libxi6                                                                        2:1.8.1-1build1                         deb                            
 libxinerama1                                                                  2:1.1.4-3build1                         deb                            
+libxkbcommon-x11-0                                                            1.6.0-1build1                           deb                            
 libxkbcommon0                                                                 1.6.0-1build1                           deb                            
 libxkbfile1                                                                   1:1.1.0-1build4                         deb                            
 libxml-parser-perl                                                            2.47-1build3                            deb                            
@@ -973,7 +978,7 @@ nginx-common                                                                  1.
 oauthlib                                                                      3.2.2                                   python                         
 ocl-icd-libopencl1                                                            2.3.2-1build1                           deb                            
 openbox                                                                       3.6.1-12build5                          deb                            
-openssh-client                                                                1:9.6p1-3ubuntu13.12                    deb                            
+openssh-client                                                                1:9.6p1-3ubuntu13.13                    deb                            
 openssl                                                                       3.0.13-0ubuntu3.5                       deb                            
 packagekit                                                                    1.2.8-2ubuntu1.2                        deb                            
 pasimple                                                                      0.0.3                                   python                         
@@ -981,7 +986,7 @@ passwd                                                                        1:
 patch                                                                         2.7.6-7build3                           deb                            
 pci.ids                                                                       0.0~2024.03.31-1ubuntu0.1               deb                            
 pciutils                                                                      1:3.10.0-2build1                        deb                            
-pcmflux                                                                       1.0.3                                   python                         
+pcmflux                                                                       1.0.4                                   python                         
 perl                                                                          5.38.2-3.2ubuntu0.1                     deb                            
 perl-base                                                                     5.38.2-3.2ubuntu0.1                     deb                            
 perl-modules-5.38                                                             5.38.2-3.2ubuntu0.1                     deb                            
