@@ -107,4 +107,5 @@ init_diagram: |
   "gzdoom:latest" <- Base Images
 # changelog
 changelogs:
+  - {date: "28.12.25:", desc: "Add Wayland init logic."}
   - {date: "04.07.25:", desc: "Initial release."}
