@@ -11,7 +11,8 @@ LABEL maintainer="thelamer"
 
 # title
 ENV TITLE=GZDoom \
-    DOOMWADDIR="/config/Desktop"
+    DOOMWADDIR="/config/Desktop" \
+    PIXELFLUX_WAYLAND=true
 
 RUN \
   echo "**** add icon ****" && \
