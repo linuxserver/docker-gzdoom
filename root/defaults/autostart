@@ -12,4 +12,4 @@ fi
 
 
 # Run GZDoom
-xterm -e /usr/games/gzdoom
+/usr/games/gzdoom
