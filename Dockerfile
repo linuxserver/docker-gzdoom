@@ -21,7 +21,7 @@ RUN \
     https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/gzdoom-logo.png && \
   echo "**** install packages ****" && \
   DOWNLOAD_URL=$(curl -sX GET "https://api.github.com/repos/ZDoom/gzdoom/releases/latest" \
-    | awk -F '(": "|")' '/browser.*amd64.deb/ {print $3}') && \
+    | jq -r 'first(.assets[].browser_download_url | select(test("amd64.deb")))') && \
   curl -o \
     /tmp/gzdoom.deb -L \
     "${DOWNLOAD_URL}" && \
@@ -33,7 +33,7 @@ RUN \
     unzip && \
   echo "**** install freedoom ****" && \
   FREEDOOM_URL=$(curl -sX GET "https://api.github.com/repos/freedoom/freedoom/releases/latest" \
-    | awk -F '(": "|")' '/browser.*freedoom-.*.zip/ && !/.*sig/ {print $3}') && \
+    | jq -r 'first(.assets[].browser_download_url | select(test("freedoom-.*.zip") and (test("sig") | not)))') && \
   curl -o \
     /tmp/freedoom.zip -L \
     "${FREEDOOM_URL}" && \
